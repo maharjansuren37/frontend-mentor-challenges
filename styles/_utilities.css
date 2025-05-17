@@ -55,6 +55,15 @@
 .my-20 {
     margin-block: var(--spacing-20);
 }
+.my-40 {
+    margin-block: var(--spacing-40);
+}
+.my-80 {
+    margin-block: var(--spacing-80);
+}
+.my-160 {
+    margin-block: var(--spacing-160);
+}
 .mt-4 {
     margin-top: var(--spacing-4);
 }
