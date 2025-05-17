@@ -1,5 +1,6 @@
 /* Variables */
 :root {
+    /* colors */
     --clr-accent-400: hsl(0 0% 0%);
     --clr-accent-100: hsl(0 0% 100%);
 
@@ -16,17 +17,19 @@
     --clr-90: hsl(0 0% 90%);
     --clr-100: hsl(0 0% 100%);
 
-    --ff-primary: "";
+    /* font families */
+    --ff-primary: "DM Sans";
     --ff-secondary: "";
 
     --ff-body: var(--ff-primary);
     --ff-heading: var(--ff-primary);
 
+    /* font weight */
     --fw-regular: 400;
     --fw-semi-bold: 500;
     --fw-bold: 700;
 
-    /* scale for 1.2 */
+    /* font size (scale for 1.2) */
     --fs-1: 1rem;
     --fs-2: 1.2rem;
     --fs-3: 1.44rem;
@@ -46,6 +49,7 @@
     --fs-800: 2.5rem;
     --fs-900: 3.5rem;
 
+    /* spacing and sizes */
     --size-300: 0.8125rem;
     --size-900: 3.5rem;
 
@@ -60,9 +64,10 @@
 
     --transition-speed: 0.3s;
 
-    --p: 1rem/1.5rem var(--ff-body);
+    /* applied fonts */
+    /* --p: 1rem/1.5rem var(--ff-body);
     --h1: 600 3rem/1.2rem var(--ff-heading);
-    --h2: 600 2rem/1.2rem var(--ff-heading);
+    --h2: 600 2rem/1.2rem var(--ff-heading); */
 
     --fs-body: var(--fs-400);
     --fs-primary-heading: var(--fs-800);
@@ -76,6 +81,6 @@
         --fs-primary-heading: var(--fs-900);
         --fs-secondary-heading: var(--fs-800);
 
-        --fs-nav: var(--fs-300);
+        --fs-nav: var(--fs-700);
     }
 }

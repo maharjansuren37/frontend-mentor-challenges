@@ -1,8 +1,15 @@
 // Toggle Menu
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav-list');
 
-menuToggle.addEventListener('click', () => {
-  nav.classList.toggle('show');
-  console.log('Menu toggled');
+navToggle.addEventListener('click', () => {
+  const dataVisible = nav.getAttribute('data-visible');
+
+  if (dataVisible === 'false') {
+    nav.setAttribute('data-visible', true);
+    navToggle.setAttribute('aria-expanded', true);
+  } else {
+    nav.setAttribute('data-visible', false);
+    navToggle.setAttribute('aria-expanded', false);
+  }
 });

@@ -8,23 +8,48 @@
     <script defer type="module" src="index.js"></script>
 </head>
 <body>
-    <header>
-        <div class="wrapper my-20 flex justify-between align-center">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="wrapper flex justify-between align-center">
             <a class="logo" href="#">FMC</a>
-            <button class="menu-toggle" aria-label="Toggle navigation">
+            <button 
+                class="nav-toggle" 
+                aria-controls="primary-navigation"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="sr-only">Menu</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg>
             </button>
-            <nav class="nav" role="navigation">
-                <ul class="nav-list" role="list">
+            <nav>
+                <ul 
+                    id="primary-navigation" 
+                    class="nav-list flex" 
+                    data-visible="false" 
+                    role="list"
+                >
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Challenges</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                 </ul>
+            </nav>
         </div>
     </header>
+    <!-- MAIN -->
+     <main>
+        <section class="wrapper">
+            <h1>My Frontend Mentor Challenges</h1>
+        </section>
+     </main>
+     <!-- FOOTER -->
+     <footer class="footer">
+        <div class="wrapper">
+            <p>This is my footer.</p>
+        </div>
+     </footer>
 </body>
 </html>
