@@ -19,6 +19,8 @@
     --clr-90: hsl(0 0% 90%);
     --clr-100: hsl(0 0% 100%);
 
+    --clr-a-10: hsl(0 0% 10% / 0.5);
+
     /* font families */
     --ff-primary: "DM Sans";
     --ff-secondary: "";
