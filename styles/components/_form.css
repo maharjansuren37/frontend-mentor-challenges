@@ -1,0 +1,46 @@
+/* 
+    1. text-box-trim and edge might not be supported well 
+    2. nesting might not be supported
+    3. cap means the size of capital letter
+    4. ex means the size of small letter
+    5. ch means the size of character
+*/
+ */
+label {
+    text-transform: uppercase;
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+
+    @media (width > 720px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.form-group {
+    display: grid;
+    gap: 0.5cap; 
+}
+
+/* input {
+    width: 100%;
+} */
+
+input:not([type="checkbox"], [type="radio"]) {
+    width: 100%;
+}
+
+.form-group:has(.fine-print) {
+    grid-column: 1 / -1;
+
+    display: flex;
+    gap: 1ch;
+}
+
+.contact-form button {
+    justify-self: start;
+}
